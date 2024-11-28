@@ -6,7 +6,6 @@ record GroceryItem(String name, String type, int count) {
     public GroceryItem(String name) {
         this(name, "DAIRY",1);
     }
-
 }
 
 public class Main {
@@ -18,6 +17,10 @@ public class Main {
         groceryArray[2] = new GroceryItem("oranges", "PRODUCE", 2);
         System.out.println(Arrays.toString(groceryArray));
 
+
+        // The below code is the RAW use of the object type 'Object'.
+        // If we do not specify a type with an ArrayList, it's using
+        // the Object class by default
         ArrayList objectList = new ArrayList();
         objectList.add(new GroceryItem("Peanuts"));
         objectList.add("Pie");
