@@ -36,6 +36,11 @@ public class MoreLists {
         groceries.addAll(nextList);
         System.out.println(groceries);
 
+        System.out.println("Third item =  " + groceries.get(2));
+
+        if (groceries.contains("mustard")) {
+            System.out.println("List contains mustard");
+        }
 
 
         // The code below DOES NOT compile and throws an exception.
