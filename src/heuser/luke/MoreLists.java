@@ -42,7 +42,6 @@ public class MoreLists {
             System.out.println("List contains mustard");
         }
 
-
         // The code below DOES NOT compile and throws an exception.
         // The instantiation code of ArrayList is calling a constructor
         // on ArrayList and passing the argument of type String[] 'nextItem'.
@@ -50,6 +49,27 @@ public class MoreLists {
 //        String[] nextItem = {"test", "one", "two"};
 //        ArrayList<String> nextGroceries = new ArrayList<>(nextItem);
 //        nextGroceries.add("yogurt");
-    }
 
+        groceries.add("yogurt");
+        System.out.println("first = " + groceries.indexOf("yogurt"));
+        System.out.println("last = " + groceries.lastIndexOf("yogurt"));
+
+        System.out.println(groceries);
+        groceries.remove(1);
+        System.out.println(groceries);
+        groceries.remove("yogurt");
+        System.out.println(groceries);
+
+        groceries.removeAll(List.of("apples", "eggs"));
+        System.out.println(groceries);
+
+        groceries.retainAll(List.of("apples", "milk", "mustard", "cheese"));
+
+        System.out.println(groceries);
+
+        groceries.clear();
+        System.out.println(groceries);
+        System.out.println("isEmpty = " + groceries.isEmpty());
+
+    }
 }
