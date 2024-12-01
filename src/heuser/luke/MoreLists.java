@@ -84,6 +84,7 @@ public class MoreLists {
         groceries.sort(Comparator.reverseOrder());
         System.out.println(groceries);
 
+
         var groceryArray = groceries.toArray(new String[groceries.size()]);
         System.out.println(Arrays.toString(groceryArray));
 
